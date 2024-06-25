@@ -1,0 +1,28 @@
+[0m22:12:48.181757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ddad90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105247950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dbabd0>]}
+
+
+============================== 22:12:48.184436 | adc3b623-42f1-4bf3-bda0-aee56a429e6e ==============================
+[0m22:12:48.184436 [info ] [MainThread]: Running with dbt=1.6.15
+[0m22:12:48.184732 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/nehalkumar/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:13:32.535046 [debug] [MainThread]: Starter project path: /Users/nehalkumar/Documents/GitHub/p-dbt/dbt-tutorial-bigquery/lib/python3.11/site-packages/dbt/include/starter_project
+[0m22:13:32.549036 [info ] [MainThread]: 
+Your new dbt project "dbt_tutorial_bigquery" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:13:32.549632 [info ] [MainThread]: Setting up your profile.
+[0m22:19:07.015766 [info ] [MainThread]: Profile dbt_tutorial_bigquery written to /Users/nehalkumar/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:19:07.020345 [debug] [MainThread]: Command `dbt init` succeeded at 22:19:07.019595 after 378.86 seconds
+[0m22:19:07.021400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dd8b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10524dd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b9f9d0>]}
+[0m22:19:07.022510 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,22 @@
+1. dbt run : materialize tables in the datawarehouse
+2. dbt run --full-refresh : drops the table which exists in BigQuery and materialises as new 
+                                            table/view
+3. dbt run -s staging : will run all models that exist in models/staging folder
+4. dbt init {name_of_project}: Initialises dbt project 
+5. dbt debug : To check if connection is established between underlying   
+                          database 
+6. dbt seed: Materialize seed/file as a table in the database
+7. dbt compile: checks if model references are correct , compiles sql in analyses folder and puts the compiled sql in a target folder
+8. dbt source freshness: To check if the source data has stale values 
+9. dbt snapshot : To build snapshots 
+10. dbt test : Used to execute all tests in dbt project 
+11. dbt test --select test_type:generic - used to execute only generic test 
+12.  dbt test --select test_type:singular - used to execute only singular test 
+13.  dbt test --select one_specific_model - used to execute tests from one specific model
+14.  dbt deps : Used to install new packages 
+15. dbt build : dbt run + dbt test 
+      -  Lets say we run dbt run followed by dbt test command. here first all model materialization will action followed by tests. If any test fails we would  get an error but downstream tables would have already been created. Which is not ideal as we would want to test before materialising anything on our data platform 
+      - So dbt built will first run tests and when test passes dbt run to materialize data 
+16. dbt docs generate : To generate docs from yaml files 
+17. dbt docs serve: To create a lightweight document server 
+18. dbt run --select stg_hosts+ : Execute all upstream models to stg_hosts models
