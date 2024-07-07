@@ -5,6 +5,7 @@
 4. dbt init {name_of_project}: Initialises dbt project 
 5. dbt debug : To check if connection is established between underlying   
                           database 
+   dbt debug --config-dir : This command will provide location of the profiles.yml file                   
 6. dbt seed: Materialize seed/file as a table in the database
 7. dbt compile: checks if model references are correct , compiles sql in analyses folder and puts the compiled sql in a target folder
 8. dbt source freshness: To check if the source data has stale values 
