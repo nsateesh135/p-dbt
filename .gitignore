@@ -1,2 +1,2 @@
-credentials.json
-venv
+/p-dbt/blob/main/credentials.json
+/p-dbt/tree/main/venv
